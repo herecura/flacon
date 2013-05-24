@@ -1,12 +1,13 @@
 pkgbase = flacon
 	pkgdesc = Extracts individual tracks from one big audio file containing the entire album of music and saves them as separate audio files.
 	pkgver = 0.8.0
-	pkgrel = 1
+	pkgrel = 2
 	url = http://code.google.com/p/flacon/
 	arch = any
 	license = GPL
-	depends = python2-qt
+	depends = python2-pyqt
 	depends = shntool
+	depends = python2-chardet
 	optdepends = flac: for decoding and encoding FLAC files
 	optdepends = mac: for decoding APE files
 	optdepends = wavpack: for decoding WV files
