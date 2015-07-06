@@ -2,7 +2,7 @@
 # Maintainer from 0.8.0 release satanselbow <igdfpm@gmail.com>
 pkgname=flacon
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Extracts individual tracks from one big audio file containing the \
  entire album of music and saves them as separate audio files."
 arch=('i686' 'x86_64')
