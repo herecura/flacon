@@ -2,14 +2,14 @@
 # Maintainer from 0.8.0 release satanselbow <igdfpm@gmail.com>
 pkgname=flacon
 pkgver=2.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Extracts individual tracks from one big audio file containing the \
  entire album of music and saves them as separate audio files."
 arch=('i686' 'x86_64')
 url="https://github.com/flacon/flacon/"
 license=('LGPL')
 makedepends=('cmake')
-depends=('qt4' 'uchardet' 'flac' 'shntool' 'hicolor-icon-theme')
+depends=('qt4' 'uchardet' 'flac' 'shntool' 'desktop-file-utils' 'hicolor-icon-theme' 'shared-mime-info')
 optdepends=(
   'vorbis-tools: For OGG support'
   'mac: For APE support'
@@ -21,6 +21,7 @@ optdepends=(
 )
 
 source=("$pkgname-$pkgver.tar.gz::https://github.com/flacon/flacon/archive/v$pkgver.tar.gz")
+sha256sums=('3408304e7ab524a2e8a621ea780579e1be7b3359fefe7d37a1b88f34d6120e02')
 
 prepare() {
   	mkdir -p "$pkgname-$pkgver/build"
@@ -36,4 +37,3 @@ package() {
 	make DESTDIR=${pkgdir} install
 }
 
-sha256sums=('3408304e7ab524a2e8a621ea780579e1be7b3359fefe7d37a1b88f34d6120e02')
