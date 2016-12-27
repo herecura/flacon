@@ -1,7 +1,7 @@
 # Contributor: Artem Sereda <overmind88@gmail.com>
 # Maintainer from 0.8.0 release satanselbow <igdfpm@gmail.com>
 pkgname=flacon
-pkgver=2.1.0
+pkgver=2.1.1
 pkgrel=1
 pkgdesc="Extracts individual tracks from one big audio file containing the \
     entire album of music and saves them as separate audio files."
@@ -22,7 +22,7 @@ optdepends=(
 )
 
 source=("$pkgname-$pkgver.tar.gz::https://github.com/flacon/flacon/archive/v$pkgver.tar.gz")
-sha256sums=('787b84ba6f068bb54954ec4681f21aa815fe6f25f19f43f10942c5fcec967e2d')
+sha256sums=('9ece812c0bd68828301d745fbdddaf9ff2d9e572cc205e20d2bbcb093de98a1b')
 
 prepare() {
     mkdir -p "$pkgname-$pkgver/build"
