@@ -9,7 +9,7 @@ pkgver=3.1.1
 pkgrel=1
 pkgdesc="Extracts individual tracks from one big audio file containing the \
  entire album of music and saves them as separate audio files."
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url="https://flacon.github.io/"
 license=('LGPL2.1')
 makedepends=('cmake' 'icu' 'qt5-tools')
