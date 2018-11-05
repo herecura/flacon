@@ -5,7 +5,7 @@
 # Contributor: Artem Sereda <overmind88 at gmail dot com>
 
 pkgname="flacon"
-pkgver=4.1.0
+pkgver=5.0.0
 pkgrel=1
 pkgdesc="Extracts individual tracks from one big audio file containing the \
  entire album of music and saves them as separate audio files."
@@ -25,7 +25,7 @@ optdepends=('flac: For FLAC support'
             'opus-tools: For OPUS support')
 conflicts=('flacon-git')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/$pkgname/$pkgname/archive/v$pkgver.tar.gz")
-sha512sums=('4e786571ba3e157aad2dc27523f8b9de259b44b84c7b054124a610199ef19855832000e4499d18bd6f725f2133bbbbf8d0d75f1cafbdce918605c3b407f6b0ef')
+sha512sums=('1be6fd718379a55e89863ce37f07d928f7c43a48dc70cf0396e15d2e4e71fbde89b77471d7da2e0bc4306e93e4f19f2fd792c10a584b6ae522d67b86aaafcd1f')
 
 build() {
     cd "$pkgname-$pkgver"
